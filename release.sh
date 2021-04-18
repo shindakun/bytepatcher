@@ -35,7 +35,7 @@
 #
 #  expects GITHUB_TOKEN in env
 #
-github-release info -user shindakun -repo bytepatcher
+github-release info --user shindakun --repo bytepatcher
 
 # TAG=$(git describe $(git rev-list --tags --max-count=1))
 
@@ -80,5 +80,5 @@ github-release upload \
     --user shindakun \
     --repo bytepatcher \
     --tag $TAG \
-    --name "bytepatcher_windows" \
-    --file bytepatcher
+    --name "bytepatcher_windows.exe" \
+    --file bytepatcher.exe
